@@ -16,7 +16,7 @@
   }
   
   img.item {
-    max-width: 300px;
+    max-width: 400px;
   }
 
   </style>
@@ -29,7 +29,9 @@
   <h1>🇺🇸 Wall of Shame 🇺🇸</h1>
   
   <div id="container">
+    <img src="images/popularvote.png" class="item">
     <img src="images/mocking.gif" class="item">
+    <img src="images/voterfraud.png" class="item">
     <img src="images/stunner.gif" class="item">
     <img src="images/trump-drag.gif" class="item">
     <img src="images/pizzahut.gif" class="item">
@@ -46,7 +48,7 @@
       var $grid = $('#container').masonry({
         // options...
         itemSelector: '.item',
-        columnWidth: 100
+        columnWidth: 0
       });
       
       $grid.imagesLoaded().progress( function() {
